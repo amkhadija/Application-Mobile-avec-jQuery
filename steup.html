@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tuto jQuery Mobile</title>
+    <meta name="author" content="Khadija Khorchani">
+    <meta name="description" content="This website is about jQuery mobile">
+    <meta name="keywords" content="jquery, html, css, jquery mobile">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+    .jquery-logo {
+        max-width: 100%; /* Assurez-vous que l'image ne dépasse pas sa taille d'origine */
+        height: auto; /* Garantit que l'image conserve ses proportions d'origine */
+        display: block; /* Supprime l'espace supplémentaire sous l'image */
+        margin: 0 auto; /* Centre l'image horizontalement */
+    }
+	</style>
+</head>
+<body>
+
+    <!-- _____________________________Page d'accueil ___________________________________________ -->
+    <div data-role="page" id="homepage">
+
+        <div data-role="header" data-theme="b">
+            <!--le logo de jQuery -->
+    		<img src="https://demos.jquerymobile.com/1.1.2/docs/_assets/images/jquery-logo.png" alt="Logo jQuery" class="jquery-logo">
+        </div>
+
+        <div data-role="main" class="ui-content" data-theme="d">
+            <p>
+                <h2>Bienvenue dans l'univers de jQuery !<h2/>
+
+                <!-- Liste avec listview -->
+                <ul data-role="listview" data-inset="true" >
+                    <li>
+                        <a href="#pourquoi-jquery" ui-icon-carat-r ui-btn-icon-right>
+                            <h2>Pourquoi jQuery</h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#prerequis" ui-icon-carat-r ui-btn-icon-right>
+                            <h2>Prérequis</h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#comment-commencer" ui-icon-carat-r ui-btn-icon-right>
+                            <h2>Comment commencer ?</h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#savoirplus" ui-icon-carat-r ui-btn-icon-right>
+                            <h2>Savoir plus</h2>
+                        </a>
+                    </li>
+                </ul>
+               
+            </p>
+        </div>
+
+        <div data-role="footer" data-theme="b" data-position="fixed">
+            <h4>&copy;By Kh@Kh2023</h4>
+        </div>
+
+    </div>
+
+    <!-- ________________________ Page Pourquoi jQuery _________________________________-->
+    <div data-role="page" id="pourquoi-jquery">
+        <div data-role="header" data-theme="b">
+            <h1>Pourquoi jQuery</h1>
+            <a href="#homepage" data-transition="slide" class="ui-btn ui-btn-inline ui-mini ui-icon-home ui-btn-icon-right"></a>
+        </div>
+
+        <div data-role="main" class="ui-content" data-theme="d">
+            <h4>Pourquoi jQuery ?</h4>
+            <p>	jQuery est une bibliothèque JavaScript légère et puissante qui simplifie le processus de manipulation des éléments HTML, la gestion des événements, les requêtes AJAX, et bien plus encore. Son principal objectif est de rendre le développement web plus simple et plus efficace.
+            <p/>
+            <ol>
+                <li>Simplicité d'utilisation : jQuery simplifie la syntaxe JavaScript, rendant le code plus lisible et plus facile à écrire.</li>
+                <li>Manipulation DOM : Accédez facilement aux éléments de votre page, modifiez leur contenu, et gérez les événements avec facilité.</li>
+                <li>Animation : Animez vos éléments de manière fluide grâce aux fonctions d'animation intégrées.</li>
+                <li>Requêtes AJAX : Effectuez des requêtes asynchrones pour récupérer ou envoyer des données au serveur sans recharger la page.</li>
+            </ol>
+
+            <!-- Lien de retour à la page principale -->
+            <a href="#homepage" data-transition="slide" class="ui-btn ui-btn-inline ui-mini ui-icon-home ui-btn-icon-left">Retour</a>
+        </div>
+
+        <div data-role="footer" data-theme="b" data-position="fixed">
+         	      		 
+   		 </div>
+
+        </div>
+    </div>
+	<!-- _____________________________Page Prérequis____________________________________-->
+	<div data-role="page" id="prerequis">
+	    <div data-role="header" data-theme="b">
+	    	<!-- Lien de retour à la page principale -->
+	        <a href="#homepage" data-transition="slide" class="ui-btn ui-btn-inline ui-mini ui-icon-home ui-btn-icon-left"></a>
+	        <h1>Prérequis pour Apprendre jQuery<</h1>
+	    </div>
+
+	    <div data-role="main" class="ui-content" data-theme="d">
+	        <h4>Avant de plonger dans l'apprentissage de jQuery, il est recommandé d'avoir une bonne compréhension des technologies suivantes.</h4>
+	        <!-- Liste avec listview -->
+	        <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="search it ...Get it">
+	            <li><h2>HTML</h2></li>
+	            <li><h2>CSS</h2></li>
+	            <li><h2>Bootstrap</h2></li>
+	            <li><h2>JavaScript </h2></li>
+	            <li><h2>DOM</h2></li>
+	            <li><h2>AJAX </h2></li>
+	        </ul>
+
+	        <!-- Lien de retour à la page principale -->
+	        <a href="#homepage" data-transition="slide" class="ui-btn ui-btn-inline ui-mini ui-icon-home ui-btn-icon-left"></a>
+	    </div>
+
+	    <div data-role="footer" data-theme="b" data-position="fixed">
+	        
+	    </div>
+	</div>
+
+    <!-- ___________________________Page Comment Commencer________________________________________ -->
+    <div data-role="page" id="comment-commencer">
+        <div data-role="header" data-theme="b">
+        	 <!-- Lien de retour à la page principale -->
+            <a href="#homepage" data-transition="slide" class="ui-btn ui-btn-inline ui-mini ui-icon-home ui-btn-icon-left"></a>
+            <h1>Comment commencer ?</h1>
+        </div>
+
+        <div data-role="main" class="ui-content" data-theme="d">
+            <h4>Comment commencer ?</h4>
+            <ol>
+                <li>Téléchargement ou CDN : Téléchargez jQuery depuis le site officiel ou utilisez un CDN pour l'intégrer dans vos projets.</li>
+                <li>Inclusion dans votre page : Ajoutez le lien vers jQuery dans la section <code>&lt;head&gt;</code> de votre HTML.</li>
+                <li>Utilisation dans votre code : Commencez à utiliser jQuery dans vos scripts JavaScript en encadrant votre code avec la fonction <code>$(document).ready()</code>.</li>
+            </ol>
+
+            <p>
+                N'hésitez pas à consulter la documentation officielle pour des exemples concrets :
+                <a href="https://api.jquery.com/" target="_blank">https://api.jquery.com/</a>
+            </p>
+
+            
+        </div>
+
+        <div data-role="footer" data-theme="b" data-position="fixed">
+        </div>
+    </div>
+
+
+    <!-- Page Savoir Plus -->
+    <div data-role="page" id="savoirplus">
+        <div data-role="header" data-theme="b">
+            <!-- Lien de retour à la page principale -->
+            <a href="#homepage" data-transition="slide" class="ui-btn ui-btn-inline ui-mini ui-icon-home ui-btn-icon-left">Retour</a>
+            <h1>Références</h1>
+        </div>
+
+        <div data-role="main" class="ui-content" data-theme="d">
+            <h4>N'hésitez pas à consulter la documentation</h4>
+            <ol>
+                <li>Téléchargement : <a href="https://jquerymobile.com/download/" target="_blank">https://jquerymobile.com/download/</a></li>
+                <li>Docs : <a href="https://demos.jquerymobile.com/1.4.5/" target="_blank">https://demos.jquerymobile.com/1.4.5/</a></li>
+            </ol>
+
+    
+        </div>
+
+        <div data-role="footer" data-theme="b" data-position="fixed">
+        </div>
+    </div>
+
+</body>
+</html>
